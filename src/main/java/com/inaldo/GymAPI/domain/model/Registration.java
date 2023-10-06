@@ -9,7 +9,7 @@ public class Registration {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(unique = true)
-    private String number;
+    private String registration;
     private String filial;
 
     //geters & setters
@@ -23,12 +23,12 @@ public class Registration {
         this.id = id;
     }
 
-    public String getNumber() {
-        return number;
+    public String getRegistrationId() {
+        return registration;
     }
 
     public void setNumber(String number) {
-        this.number = number;
+        this.registration = number;
     }
 
     public String getFilial() {

@@ -7,7 +7,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long registration;
     private String nome;
     private String endereco;
     private String telefone;
@@ -17,11 +17,11 @@ public class User {
     //getrs & setters
 
     public Long getId() {
-        return id;
+        return registration;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.registration = registration;
     }
 
     public String getNome() {
@@ -55,4 +55,5 @@ public class User {
     public void setAccessCard(AccessCard accessCard) {
         this.accessCard = accessCard;
     }
+
 }
